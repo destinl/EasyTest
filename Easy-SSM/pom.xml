@@ -22,19 +22,25 @@
         </dependency>
     </dependencies>
 
-    <plugin>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-maven-plugin</artifactId>
-        <version>2.6.7</version> <!-- 确保版本与 Spring Boot 版本匹配 -->
-        <executions>
-            <execution>
-                <goals>
-                    <goal>repackage</goal>
-                </goals>
-            </execution>
-        </executions>
-        <configuration>
-            <!-- 可以在这里配置 mainClass，但通常不是必需的 -->
-        </configuration>
-    </plugin>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.7.10</version> <!-- 确保版本与 Spring Boot 版本匹配 -->
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>repackage</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <!-- 可以在这里配置 mainClass，但通常不是必需的 -->
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+
+
 </project>
